@@ -1,1 +1,1 @@
-This is testing out creating multiple webistes with HTML
+This website is a secondary website to my main one. Feel free to suggest changes!
