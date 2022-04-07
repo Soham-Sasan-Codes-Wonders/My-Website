@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+p {
+text-align: center;
+font-size: 60px;
+}
+</style>
+<link href = "../css/style.css" rel = "stylesheet" type = "text/css">
+</head>
+<title> 
+    Find Out How Long!
+</title>
+<body>
+    <h1>
+        Find Out How Long Until...
+    </h1>
+    <h2>
+        Made By: Soham Sasan
+    </h2>
+    <h3> 
+        Set to: Oct 12th, 2022
+    </h3>
+    <h4>
+        Code for timer from: https://www.geeksforgeeks.org/create-countdown-timer-using-javascript/
+    </h4>
+<p id="demo"></p>
+<script>
+var deadline = new Date("Oct 12, 2022 11:02:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("demo").innerHTML = days + "d "
++ hours + "h " + minutes + "m " + seconds + "s ";
+	if (t < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "EXPIRED";
+	}
+}, 1000);
+</script>
+</body>
+</html>
