@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch moreJava",
+            "request": "launch",
+            "mainClass": "moreJava",
+            "projectName": "My-Website_9fa355b0"
+        },
+        {
+            "type": "java",
+            "name": "Launch mainFile",
+            "request": "launch",
+            "mainClass": "mainFile",
+            "projectName": "My-Website_9fa355b0"
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open captcha.html",
