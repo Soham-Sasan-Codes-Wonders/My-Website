@@ -1,1 +1,2 @@
-data("../dataSets/data.csv")
+data(data.csv)
+print(data.csv)
